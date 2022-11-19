@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <center>Mis tareas</center>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list class="ios list-ios hydrated">
+    <!-- <ion-list-header class="ios hydrated">
+      Ver:
+    </ion-list-header> -->
+    <ion-item *ngFor="let booking of bookings" class="user-list">
+      <ion-label>
+        <h5>
+          <ion-icon name="book-outline"></ion-icon> {{booking.name}}
+        </h5>
+        <p>
+          <ion-icon name="alarm-outline"></ion-icon> {{booking.mobile}}
+        </p>
+        <p>
+          <ion-icon name="document-text-outline"></ion-icon> {{booking.email}}
+        </p>
+        <p>
+          <ion-icon name="paper"></ion-icon> {{booking.carrera}}
+        </p>
+      </ion-label>
+      <div class="item-note" item-end>
+        <!-- <button ion-button clear [routerLink]="['/edit-appointment/', booking.$key]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button> -->
+        <button ion-button clear (click)="deleteBooking(booking.$key)">
+          <ion-icon name="checkmark-circle-outline" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+  </ion-list>

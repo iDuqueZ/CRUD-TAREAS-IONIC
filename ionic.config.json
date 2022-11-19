@@ -1,0 +1,7 @@
+{
+  "name": "students-ionic-firebase-crud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

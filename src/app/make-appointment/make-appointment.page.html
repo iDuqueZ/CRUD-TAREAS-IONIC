@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="ios hydrated">
+    <ion-title class="ios title-ios hydrated"><ion-icon name="pencil-outline"></ion-icon>Nueva tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="contenedor-nuevo">
+    <p>Hola, aquí podras añadir una nueva tarea a tu lista, solo rellena los campos necesarios</p>
+  <ion-list lines="full">
+    <form [formGroup]="bookingForm" (ngSubmit)="formSubmit()">
+      <ion-item>
+        <ion-label position="floating">Titulo</ion-label>
+        <ion-input formControlName="name" type="text" required></ion-input>
+      </ion-item>
+      <ion-item class="descricont">
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-textarea class="descri" formControlName="email" type="text" required>
+        </ion-textarea>
+      </ion-item>
+      <br/>
+      <p>Más detalles</p>
+      <ion-item>
+        <ion-label position="floating">Horas</ion-label>
+        <ion-input formControlName="mobile" type="text" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Asignatura</ion-label>
+        <ion-input formControlName="carrera" type="text" required>
+        </ion-input>
+      </ion-item>
+      <div class="btn-agregar">
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">AGREGAR</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+    </form>
+  </ion-list>
+</div>
+</ion-content>
