@@ -16,9 +16,7 @@ Instalar y configurar IONIC en su maquina, es necesario tener node.js
   npm i -g @ionic/cli
 ```
 
-## Deployments
-
-### Pasos para correr
+## Pasos para correr
 
 Para instalar las dependencias necesarias
 ```bash
@@ -30,7 +28,11 @@ Si todo sale bien se ejecutará en el puerto 8100.
 
 ## Nota:
 
-Si deseas puedes cambiar la base de datos en src/enviroments/
+Si deseas puedes cambiar la base de datos 
+
+```bash
+ src/enviroments/
+```
 
 
 
