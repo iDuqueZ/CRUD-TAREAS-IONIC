@@ -10,23 +10,23 @@
     <form [formGroup]="bookingForm" (ngSubmit)="formSubmit()">
       <ion-item>
         <ion-label position="floating">Titulo</ion-label>
-        <ion-input formControlName="name" type="text" required></ion-input>
+        <ion-input formControlName="title" type="text" required></ion-input>
       </ion-item>
       <ion-item class="descricont">
         <ion-label position="floating">Descripción</ion-label>
-        <ion-textarea class="descri" formControlName="email" type="text" required>
+        <ion-textarea class="descri" formControlName="description" type="text" required>
         </ion-textarea>
       </ion-item>
       <br/>
       <p>Más detalles</p>
       <ion-item>
         <ion-label position="floating">Horas</ion-label>
-        <ion-input formControlName="mobile" type="text" required>
+        <ion-input formControlName="hours" type="text" required>
         </ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Asignatura</ion-label>
-        <ion-input formControlName="carrera" type="text" required>
+        <ion-input formControlName="curse" type="text" required>
         </ion-input>
       </ion-item>
       <div class="btn-agregar">

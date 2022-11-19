@@ -1,7 +1,7 @@
 export class Appointment {
     $key: string;
-    name: string;
-    email: string;
-    mobile: number;
-    carrera:string;
+    title: string;
+    description: string;
+    hours: number;
+    course:string;
 }

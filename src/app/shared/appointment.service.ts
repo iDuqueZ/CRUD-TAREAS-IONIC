@@ -10,10 +10,10 @@ export class AppointmentService {
   // Create
   createBooking(apt: Appointment) {
     return this.bookingListRef.push({
-      name: apt.name,
-      email: apt.email,
-      mobile: apt.mobile,
-      carrera: apt.carrera,
+      title: apt.title,
+      description: apt.description,
+      hours: apt.hours,
+      course: apt.course,
     });
   }
   // Get Single
@@ -29,10 +29,10 @@ export class AppointmentService {
   // Update
   updateBooking(id, apt: Appointment) {
     return this.bookingRef.update({
-      name: apt.name,
-      email: apt.email,
-      mobile: apt.mobile,
-      carrera: apt.carrera,
+      title: apt.title,
+      description: apt.description,
+      hours: apt.hours,
+      course: apt.course,
     });
   }
   // Delete

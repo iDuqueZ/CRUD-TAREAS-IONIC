@@ -23,10 +23,10 @@ export class EditAppointmentPage implements OnInit {
   }
   ngOnInit() {
     this.updateBookingForm = this.fb.group({
-      name: [''],
-      email: [''],
-      mobile: [''],
-      carrera: ['']
+      title: [''],
+      description: [''],
+      hours: [''],
+      course: ['']
     });
     console.log(this.updateBookingForm.value);
   }
